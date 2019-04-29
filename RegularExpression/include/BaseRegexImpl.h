@@ -1,5 +1,6 @@
 #pragma once
 #include "GroupDFA.h"  
+#include <istream>
 
 class BaseRegexImpl
 {
@@ -13,7 +14,13 @@ protected:
 		std::size_t &lastInitialState,
 		std::size_t &lastFinalState);
 
-	virtual  bool processUsingInvertedDfa(
+	virtual bool processUsingRegularDfa(
+		const std::istream &input,
+		std::size_t offset,
+		std::size_t &lastInitialState,
+		std::size_t &lastFinalState);
+
+	virtual bool processUsingInvertedDfa(
 		const std::string &input,
 		std::size_t offset,
 		std::size_t lastInitialState,

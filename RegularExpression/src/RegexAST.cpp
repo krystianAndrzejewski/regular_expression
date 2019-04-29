@@ -17,7 +17,7 @@ const std::map<RegexAST::TypeOperator, std::size_t> RegexAST::operatorPrority = 
 
 RegexAST::RegexAST(const std::string &regex) : pattern(regex), greedyRegex(true)
 {
-	escapeSign = "\\()+*?|[]";
+	escapeSign = "\\()+*?|[";
     compile(nodes);
 }
 
