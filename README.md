@@ -6,7 +6,11 @@
 
 ## Description
 This project allows to process simple regular expressions. An output from the analysis is a collection of group matches. For greedy regular expressions
+<<<<<<< HEAD
+a determenistic finite automata is used (match groups algorithm based on the article https://www.labs.hpe.com/techreports/2012/HPL-2012-41R1.pdf). 
+=======
 determenistic a finite automata is used (match groups algorithm based on the article https://www.labs.hpe.com/techreports/2012/HPL-2012-41R1.pdf). 
+>>>>>>> 9560e81ef9bc35133ee1e4eebb738de72cc48e43
 For lazy regular expressions a nondetermenistic finite automata performs the task.
 	
 ## Requirements
@@ -23,7 +27,7 @@ cmake -H. -Bbuild -G <generator_name:"Visual Studio 14 2015 Win64">
 ```
 
 ## Usage
-An example of usage the project is defined in main.cpp. A regular expression has a special syntax (is practically coherent with other regExp implementation) and can be assembled from the operators 
+An example of the project usage is defined in main.cpp. A regular expression has a special syntax (is practically coherent with other regExp implementation) and can be assembled from the operators 
 (all operators produces a regular expression that can be combined with other regular expression):
 * <ascii_character> - a basic operator that is defined as a translation (input character must match the value of the operarator),
 * [<ascii_character>-<ascii_character><ascii_character>(...)] - a multi-basic operator that is represented by one or more ascii character that must match the operator (dash operator takes two neighboring ascii characters and allows to get all characters from created range between the characters),
