@@ -5,7 +5,7 @@
 * [Usage](#usage)
 
 ## Description
-This project allows to process a simple regular expressions. An output from the analysis is a collection of group matches. For greedy regular expressions
+This project allows to process simple regular expressions. An output from the analysis is a collection of group matches. For greedy regular expressions
 determenistic a finite automata is used (match groups algorithm based on the article https://www.labs.hpe.com/techreports/2012/HPL-2012-41R1.pdf). 
 For lazy regular expressions a nondetermenistic finite automata performs the task.
 	
